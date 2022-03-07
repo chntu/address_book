@@ -36,7 +36,7 @@ dependencies:
   cupertino_icons: ^1.0.2
 
   # handle SVGs for Android, iOS, and Web.
-  websafe_svg: ^2.1.0+1
+  websafe_svg: ^2.1.1
 
   # Firebase
   firebase_core: ^1.13.1

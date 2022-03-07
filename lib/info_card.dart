@@ -82,30 +82,23 @@ class InfoCard extends StatelessWidget {
                       color: Colors.deepOrange,
                     ),
                   ),
-                  Spacer(),
-                  Container(
-                    constraints: BoxConstraints(
-                      maxWidth: 100,
+                  SizedBox(
+                    width: kDefaultPadding,
+                  ),
+                  IconButton(
+                    onPressed: deletePress,
+                    icon: WebsafeSvg.asset(
+                      "assets/Icons/Trash.svg",
+                      width: 24,
+                      color: Colors.black
                     ),
-                    child: Row(
-                      children: [
-                        IconButton(
-                          onPressed: deletePress,
-                          icon: WebsafeSvg.asset(
-                            "assets/Icons/Trash.svg",
-                            width: 24,
-                            color: Colors.black
-                          ),
-                        ),
-                        IconButton(
-                          onPressed: editPress,
-                          icon: WebsafeSvg.asset(
-                            "assets/Icons/Edit.svg",
-                            width: 24,
-                            color: Colors.black
-                          ),
-                        ),
-                      ],
+                  ),
+                  IconButton(
+                    onPressed: editPress,
+                    icon: WebsafeSvg.asset(
+                      "assets/Icons/Edit.svg",
+                      width: 24,
+                      color: Colors.black
                     ),
                   )
                 ],
